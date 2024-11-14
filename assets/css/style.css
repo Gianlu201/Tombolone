@@ -1,0 +1,102 @@
+.container {
+  width: 950px;
+  margin: 0 auto;
+  border: 1px solid black;
+  /* background-color: #f8271b; */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#estrai,
+#tabellone div {
+  background-color: white;
+}
+
+h1,
+#tabellone,
+#tabellone div {
+  text-align: center;
+}
+
+#estrattore {
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  width: 900px;
+}
+
+#estrattore div {
+  display: inline-block;
+}
+
+#estrai {
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+
+#estrai button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: cyan;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+}
+
+#estrai div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+#estrai div,
+#tabellone div {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+#estrai div,
+#tabellone div span {
+  border: 5px solid red;
+  border-radius: 50%;
+  background-color: rgba(181, 157, 111, 0.7);
+}
+
+#estratti {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  margin-left: 500px;
+}
+
+#tabellone div {
+  display: inline-block;
+  border: 1px solid black;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  position: relative;
+}
+
+#tabellone div span {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btnEstrai {
+  cursor: pointer;
+}
