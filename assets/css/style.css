@@ -9,11 +9,6 @@
   visibility: hidden;
 }
 
-#estrai,
-#tabellone div {
-  /* background-color: white; */
-}
-
 h1,
 #tabellone,
 #tabellone div {
@@ -117,4 +112,16 @@ h1,
 
 #estratti div:not(:first-of-type) {
   opacity: 0.6;
+}
+
+/* Cartelline giocatore */
+#playerSection {
+  margin: 50px auto 0;
+  width: 900px;
+}
+
+#numberCartelle {
+  width: 150px;
+  padding: 5px;
+  font-size: 0.9em;
 }

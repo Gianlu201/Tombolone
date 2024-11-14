@@ -48,21 +48,20 @@ function markCell(index) {
 }
 
 function checkExtractedNumbers() {
+  let numbersShown;
   switch (extractedNumbers.length) {
     case 1:
-      showExtractedNumbers(1);
+      numbersShown = 1;
       break;
     case 2:
-      showExtractedNumbers(2);
+      numbersShown = 2;
       break;
     case 3:
     default:
-      showExtractedNumbers(3);
+      numbersShown = 3;
       break;
   }
-}
 
-function showExtractedNumbers(numbersShown) {
   estratti.innerHTML = '';
   for (let i = 0; i < numbersShown; i++) {
     const myDiv = document.createElement('div');
