@@ -31,8 +31,8 @@ function getRandomNumber() {
     const myIndex = Math.floor(Math.random() * numbers.length);
     const myNum = numbers[myIndex];
     extractedNumbers.push(myNum);
-    checkExtractedNumbers();
     numbers.splice(myIndex, 1);
+    checkExtractedNumbers();
     numeroEstratto.innerText = myNum;
     return myNum;
   } else {
@@ -63,12 +63,13 @@ function checkExtractedNumbers() {
 }
 
 function showExtractedNumbers(numbersShown) {
-  //   for (let i = 0; i < numbersShown; i++) {
-  //     const myDiv = document.createElement('div');
-  //     myDiv.innerText = extractedNumbers[extractedNumbers.length - 1];
-  //     myDiv.classList.add('pedina');
-  //     estratti.appendChild(myDiv);
-  //   }
+  estratti.innerHTML = '';
+  for (let i = 0; i < numbersShown; i++) {
+    const myDiv = document.createElement('div');
+    myDiv.innerText = extractedNumbers[extractedNumbers.length - 1 - i];
+    myDiv.classList.add('pedina');
+    estratti.appendChild(myDiv);
+  }
 }
 
 // ----------------------------------------

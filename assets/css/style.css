@@ -11,7 +11,7 @@
 
 #estrai,
 #tabellone div {
-  background-color: white;
+  /* background-color: white; */
 }
 
 h1,
@@ -24,6 +24,7 @@ h1,
   margin: 0 auto 30px;
   padding: 0 20px;
   width: 900px;
+  position: relative;
 }
 
 #estrattore div {
@@ -59,7 +60,8 @@ h1,
 }
 
 #estrai div,
-#tabellone div {
+#tabellone div,
+.pedina {
   font-size: 1.3em;
   font-weight: bolder;
 }
@@ -73,9 +75,10 @@ h1,
 
 #estratti {
   width: 200px;
-  height: 50px;
-  border: 1px solid black;
+  height: 100%;
   margin-left: 500px;
+  position: absolute;
+  top: 0;
 }
 
 #tabellone div {
@@ -92,6 +95,7 @@ h1,
   height: 50px;
 
   position: absolute;
+  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -99,4 +103,18 @@ h1,
 
 #btnEstrai {
   cursor: pointer;
+}
+
+.pedina {
+  width: 50px;
+  height: 50px;
+  border: 5px solid red;
+  border-radius: 50%;
+  background-color: rgba(181, 157, 111, 0.7);
+  text-align: center;
+  line-height: 50px;
+}
+
+#estratti div:not(:first-of-type) {
+  opacity: 0.6;
 }
