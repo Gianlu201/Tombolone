@@ -26,11 +26,11 @@ Permette di estrarre numeri in maniera casuale, visualizzarli in una tabella dei
 
 1. Clona la repository:
    ```bash
-   git clone https://github.com/tuo-username/tombolone-app.git
+   git clone https://github.com/Gianlu201/Tombolone.git
    ```
 2. Entra nella cartella del progetto:
    ```bash
-   cd tombolone-app
+   cd Tombolone
    ```
 3. Apri il file `index.html` nel browser.
 
